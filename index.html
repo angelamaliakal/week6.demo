@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+<metacjarset= "utf-8">
+<title>Javascript Demo Week 6</title>
+  <script language="javascript">
+  
+  function OrderItem(name, price)
+    {
+      this.name = name;
+      this.price = price;
+      this.quantity = 0;
+      this.getItemCost = getItemCost;
+    }
+  function getItemCost()
+    {
+      return this.quantity * this.price;
+    }
+    
